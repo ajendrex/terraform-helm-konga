@@ -43,7 +43,7 @@ EOF
 
 resource helm_release konga {
   name          = local.name
-  atomic        = true
+  atomic        = false
   repository    = var.chart_repository
   chart         = var.chart_name
   recreate_pods = var.recreate_pods
